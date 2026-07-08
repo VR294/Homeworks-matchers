@@ -1,17 +1,17 @@
-import sortHeroes from '../src/heroes.js';
+import sortHeroes from '../src/heroes';
 
 test('sorting characters by health', () => {
-    const heroes = [
-        {name: 'мечник', health: 10},
-        {name: 'маг', health: 100},
-        {name: 'лучник', health: 80},
-    ]
+  const heroes = [
+    { name: 'мечник', health: 10 },
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+  ];
 
-    const result = sortHeroes(heroes);
+  const result = sortHeroes(heroes);
 
-    expect(result).toEqual([
-        {name: 'маг', health: 100},
-        {name: 'лучник', health: 80},
-        {name: 'мечник', health: 10},
-    ])
-})
+  expect(result).toEqual([
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+    { name: 'мечник', health: 10 },
+  ]);
+});
